@@ -1,0 +1,55 @@
+@import "../app/variables.scss";
+
+.offer {
+	position: relative;
+
+	width: 379px;
+	min-height: 381px;
+	border: 1px solid black;
+}
+
+.offer > a {
+	text-decoration: none;
+	color: black;
+}
+
+.offer__image-container {
+	position: relative;
+}
+
+.offer__label {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 5px;
+}
+
+.offer__label--independent {
+	background-color: blue;
+}
+
+.offer__label--support {
+	background-color: orange;
+}
+
+.offer__description-container {
+	padding: 5px;
+}
+
+@media screen and (max-width: 1280px) {
+	.offer {
+		
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.offer {
+		width: 90%;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+
+	.offer__image {
+		height: auto;
+	}
+}

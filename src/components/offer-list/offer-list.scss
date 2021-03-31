@@ -1,0 +1,28 @@
+@import "../app/variables.scss";
+
+.offer-section__offer-list {
+  display: grid; 
+  grid-template-columns: repeat(3, minmax(379px, 1fr)); 
+  grid-gap: 20px;
+  justify-items: center; 
+  
+}
+
+@media screen and (max-width: 1279px) {
+	.offer-section__offer-list {
+		grid-template-columns: repeat(2, minmax(379px, 1fr)); 
+	}
+}
+
+@media screen and (max-width: 799px) {
+	.offer-section__offer-list {
+		grid-template-columns: repeat(1, minmax(379px, 1fr)); 
+	}
+}
+
+@media screen and (max-width: 379px) {
+	.offer-section__offer-list {
+		display: flex;
+		flex-direction: column;
+	}
+}
