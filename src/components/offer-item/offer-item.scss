@@ -5,7 +5,9 @@
 
 	width: 379px;
 	min-height: 381px;
-	border: 1px solid black;
+	border: 1px solid #D8D8D8;
+	background-color: #F8F8F8;
+
 }
 
 .offer > a {
@@ -21,19 +23,57 @@
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	padding: 5px;
+	padding: 8px 10px 6px 11px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 16px;
+	text-align: center;
+	color: white;
 }
 
 .offer__label--independent {
-	background-color: blue;
+	background-color: #006F79;
 }
 
 .offer__label--support {
-	background-color: orange;
+	background-color: #EC6608;
 }
 
 .offer__description-container {
-	padding: 5px;
+	padding-top: 20px;
+	padding-bottom: 17px;
+	padding-left: 20px;
+}
+
+.offer__title {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 27px;
+	text-align: left;
+	margin-bottom: 2px;
+}
+
+.offer__address {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	text-align: left;
+	margin-bottom: 15px;	
+}
+
+.offer__price {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	text-align: left;
+	margin-bottom: 7px;	
+}
+
+.offer__details {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	text-align: left;
 }
 
 @media screen and (max-width: 1280px) {

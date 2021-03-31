@@ -1,6 +1,24 @@
 @import "../app/variables.scss";
 
-input {
-	border: 1px solid $primary-color;
+.filter-section {
+	margin-bottom: 45px;
 }
 
+.filter-section__input {
+	width: 418px;
+	height: 50px;
+	padding-left: 25px;
+	margin-left: 20px;
+	border: 1px solid #D8D8D8;
+	box-sizing: border-box;
+	border-radius: 25px;
+	outline: none;
+}
+
+.filter-section__label {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: -0.3px;
+	color: $primary-color;
+}

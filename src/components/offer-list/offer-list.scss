@@ -3,9 +3,32 @@
 .offer-section__offer-list {
   display: grid; 
   grid-template-columns: repeat(3, minmax(379px, 1fr)); 
-  grid-gap: 20px;
+  grid-gap: 40px 20px;
   justify-items: center; 
   
+}
+
+.offer-section__see-more-button {
+	position: relative;
+	display: block;
+	width: 150px;
+	height: 50px;
+	margin: 60px auto;
+	padding: 12px 33px;				
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: -0.3px;
+	text-align: center;
+	border: 1px solid #D8D8D8;
+	border-radius: 25px;
+	background-color: #fff;
+}
+
+.offer-section__see-more-button svg {
+	position: absolute;
+	top: 16px;
+	left: 117px;
 }
 
 @media screen and (max-width: 1279px) {
