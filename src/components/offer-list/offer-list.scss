@@ -3,7 +3,7 @@
 .offer-section__offer-list {
   display: grid; 
   grid-template-columns: repeat(3, minmax(379px, 1fr)); 
-  grid-gap: 40px 20px;
+  grid-gap: 37px 20px;
   justify-items: center; 
   
 }
@@ -23,7 +23,16 @@
 	border: 1px solid #D8D8D8;
 	border-radius: 25px;
 	background-color: #fff;
+	box-sizing: border-box;
+
+	&:hover,
+	&:active {
+		background-color: $secondary-color;
+		border: 1px solid #D8D8D8;
+		border-radius: 25px;	
+	}
 }
+
 
 .offer-section__see-more-button svg {
 	position: absolute;
@@ -31,21 +40,30 @@
 	left: 117px;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: $large-desktop-width) {
 	.offer-section__offer-list {
 		grid-template-columns: repeat(2, minmax(379px, 1fr)); 
+		grid-gap: 20px 20px;
 	}
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: $small-desktop-width) {
 	.offer-section__offer-list {
-		grid-template-columns: repeat(1, minmax(379px, 1fr)); 
+		grid-template-columns: repeat(2, minmax(379px, 1fr)); 
+		grid-gap: 10px 10px;
 	}
 }
 
-@media screen and (max-width: 379px) {
+@media screen and (max-width: $tablet-width) {
 	.offer-section__offer-list {
-		display: flex;
-		flex-direction: column;
+		grid-template-columns: repeat(1, minmax(379px, 1fr));
+		grid-gap: 10px 10px; 
+	}
+}
+
+@media screen and (max-width: $phone-width) {
+	.offer-section__offer-list {
+		grid-template-columns: 1fr;
+		grid-gap: 10px 10px; 
 	}
 }

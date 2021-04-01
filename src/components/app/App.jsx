@@ -7,7 +7,7 @@ import OfferList from '../offer-list/offer-list';
 function App() {
   return (
     <div className="app">
-      <Header />
+      <Header title="Our Latest Developments"/>
       <Filter />
       <OfferList />
     </div>

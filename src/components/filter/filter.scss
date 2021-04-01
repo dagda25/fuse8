@@ -5,14 +5,18 @@
 }
 
 .filter-section__input {
-	width: 418px;
-	height: 50px;
-	padding-left: 25px;
-	margin-left: 20px;
-	border: 1px solid #D8D8D8;
-	box-sizing: border-box;
-	border-radius: 25px;
-	outline: none;
+  width: 418px;
+  height: 50px;
+  padding-left: 25px;
+  margin-left: 20px;
+  border: 1px solid #D8D8D8;
+  box-sizing: border-box;
+  border-radius: 25px;
+  outline: none;
+
+  &:hover {
+    border: 2px solid #D8D8D8;
+  }
 }
 
 .filter-section__label {
@@ -21,4 +25,57 @@
 	line-height: 24px;
 	letter-spacing: -0.3px;
 	color: $primary-color;
+}
+
+@media screen and (max-width: $large-desktop-width) {
+  .filter-section	{
+  	width: 500px;
+  	margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: $small-desktop-width) {
+	.filter-section	{
+		margin-bottom: 35px;
+		margin-left: 50px;
+	}
+
+	.filter-section__input {
+		width: 350px;
+		height: 40px;
+		border-radius: 20px;
+	}
+}
+
+@media screen and (max-width: $tablet-width) {
+  .filter-section	{
+  	width: 320px;
+  	margin: 0 auto;
+  	margin-bottom: 25px;
+  }
+  .filter-section__input {
+  	width: 250px;
+  	height: 40px;
+  	border-radius: 20px;
+  	font-size: 14px;
+  	line-height: 20px;
+  }
+}
+
+@media screen and (max-width: $phone-width) {
+	.filter-section	{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.filter-section__input {
+		max-width: 70%;
+		height: 30px;
+		border-radius: 15px;
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.filter-section__label {
+		font-size: 12px;
+		line-height: 16px;
+	}	
 }
